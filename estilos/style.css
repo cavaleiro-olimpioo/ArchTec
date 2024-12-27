@@ -17,7 +17,7 @@ body{
     width: 100vw;
 }
 
-img#logo{
+img.logo{
     width: 85%;
 }
 
@@ -58,7 +58,8 @@ input.submit{
     border-radius: 5px;
     background-color: #008FF4;
     color: white;
-    width: 150px;
+    width: 35%;
+    height: 20%;
     border: 1px solid black;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-weight: bold;
