@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArchTec</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        @media screen and (max-height: 650px) {
+            main {
+                max-height: 90%;
+                overflow-y: auto; /* Permite rolagem interna se necessário */
+            }
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <img src="estilos/imagens/Logo ArchTec.jpg" id="logo" alt="logo ArchTec">
-        <h1>Bem-Vindo(a)!</h1>
-        <p>Bem vindo(a) ao site da ArchTec!</p>
-        <form action="pag001.html">
-            <input class="submit" type="submit" value="Entrar">
-        </form>
-    </main>
+    <div class="container">
+        <main>
+            <img src="estilos/imagens/Logo ArchTec.jpg" id="logo" alt="logo ArchTec">
+            <h1>Bem-Vindo(a)!</h1>
+            <p>Bem vindo(a) ao site da ArchTec!</p>
+            <form action="pag001.html">
+                <input class="submit" type="submit" value="Entrar">
+            </form>
+        </main>
+    </div>
 </body>
 </html>
