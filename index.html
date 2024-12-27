@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
     <style>
-        @media screen and (max-height: 650px) {
-            main {
-                max-height: 95%;
-               
-                 /* Permite rolagem interna se necessário */
+        @media screen and (max-width: 500px){
+            main{
+                width: 90%;
+                height: 90%;
+                overflow-x: hidden;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                height: 650px;
+            }
+            body{
+                overflow-x: hidden;
+            }
+            .container{
+                overflow-x: hidden;
+                display: block;
             }
         @media screen and (max-height: 600px) {
                 main{  /*Bom eu só não consegui resolver o problema do botão de entrar, no caso ele ta muito para baixo, se alguem conseguir resolver ou melhorar essa parte eu agradeço :)*/ 
@@ -27,7 +38,7 @@
 <body>
     <div class="container">
         <main>
-            <img src="estilos/imagens/Logo ArchTec.jpg" id="logo" alt="logo ArchTec">
+            <img src="estilos/imagens/Logo ArchTec.jpg" class="logo" alt="logo ArchTec">
             <h1>Bem-Vindo(a)!</h1>
             <p>Bem vindo(a) ao site da ArchTec!</p>
             <form action="pag001.html">
