@@ -1,8 +1,7 @@
 @charset "UTF-8";
-@font-face{
-    font-family: 'Android';
-    src: url('fontes/idroid.otf') format('opentype');
-    font-weight: normal;
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
 }
 
 :root{
@@ -11,12 +10,14 @@
     --azul0: #008FF4;
     --azul: #006dba;
     --azul1: #003eea;
+    --font1: 'idroid';
 }
 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -53,7 +54,7 @@ header a{
 }
 header h1{
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'idroid';
     font-size: 3em;
     padding: 10px;
 }
