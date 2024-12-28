@@ -7,68 +7,99 @@
     <link rel="stylesheet" href="estilos/pag001.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+    <style>
+        @media screen and (min-width: 1100px) {
+            article{
+                flex-flow: row wrap;
+                width: 100vw;
+            }
+            aside{
+                width: 500px;
+            }
+            .prop{
+                width: 90%;
+            }
+            #menu{
+                width: 600px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <span class="material-symbols-outlined">Menu</span>
-        <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
-        <h1>ArchTec</h1>
-    </nav>
-    <header>
-        <div class="header">
-            <h1>Grêmio ArchTec</h1>
-            <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
-        </div>
-    </header>
-    <main>
-        <article> 
-            <aside class="prop">
-                <h1>Propóstas</h1>
-                <p>Temos a missão de transformar nossa escola em um lugar melhor!</p>
-            </aside>
-            <aside id="cant">
-                <h2>Aumentar a variedade da cantina</h2>
-                <img src="estilos/imagens/hungry-emoticon.png" alt="EmoticonHungry" class="emoticon">
-                <p>A variedade da cantina atualmente oferecida é limitada, o que pode levar a uma falta de opções para os estudantes. Propomos uma maior variedade de alimentos na cantina, como doces e salgados novos, para que a experiência dos estudantes seja melhor.</p>
-            </aside>
-            <aside id="dc">
-                <h2>Projeto D.C.</h2>
-                <p>O projeto D.C. (Dever de Casa) é um projeto que visa ajudar os alunos a se informarem sobre as tarefas pendentes, onde vamos colocar um quadro, onde os professores colocaram as tarefas pendentes. Propomos a implementação do D.C. visando melhorar a experiência dos alunos e promover um aprendizado mais eficaz, afinal, quem nunca esqueceu do dever de casa ne?.</p>
-                <img src="estilos/imagens/dc-emoticon.jpg" alt="dcEmoticon" class="emoticon">
-            </aside>
-            <aside id="camp">
-                <h2>Campeonatos variados</h2>
-                <img src="estilos/imagens/camp-emoticon.jpg" alt="camp-emoticon" class="emoticon">
-                <p class="p">Nosso grêmio acredita que o esporte e as competições saudáveis são essenciais para promover integração, diversão e espírito de equipe entre os estudantes. Por isso, organizamos e incentivamos a participação em diversos campeonatos ao longo do ano.</p>
-                <p>Nossa ideia é incluir <strong>outras categorias</strong>, para que a interclasse, não seja apenas de futebol, temos algumas sujestões</p>
+    <div id="main">
+        <div class="menu">
+            <span  id="close" class="material-symbols-outlined">Close</span>
+            <nav class="menu" class="hidden">
+                <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+                <h1>ArchTec</h1>
                 <ul>
-                    <li>Campeonatos de <strong>jogos eletrônicos</strong>(Free Fire, E-Football, Clash Royale, etc.)</li>
-                    <li>Xadrex e Damas</li>
-                    <li>Queimada</li>
-                    <li>Futebol</li>
-                    <li>Entre outros...</li>
+                    <li><a href="pag001.html">Página inicial</a></li>
+                    <li><a href="pag002.html">Nossa equipe</a></li>
                 </ul>
-            </aside>
-            <aside id="pass">
-                <h2>Mais passeios</h2>
-                <p>Explorar o mundo além da sala de aula é fundamental para enriquecer o aprendizado e fortalecer os laços entre os estudantes. Nosso grêmio está comprometido em organizar passeios diversos, que atendam aos interesses e necessidades de todos os alunos. Nosso grêmio propõe apresentar a ideia aos responsáveis da escola, para adicionar-mos, passeios variadis, não apenas para o Hopi Hari no final do ano.</p>
-                <img src="estilos/imagens/oass-emoticon.jpg" alt="pass-emoticon" class="emoticon">
-            </aside>
-            <aside id="sug">
-                <h2>Sugestões</h2>
-                <img src="estilos/imagens/sugest-emoticon.jpg" alt="sugestEmoticon" class="emoticon">
-                <p>Todo mês iremos passar com uma caixa nas salas para que vocês deem sugestões sobre o que melhorar na escola e no grêmio</p>
-            </aside>
-            <aside id="outr">
-                <h2>Outros...</h2>
-                <p>Lembre-se, que estamos sempre aberto a novas sugestões, como mencionado nas sugestões.</p>
-                <img src="estilos/imagens/glass-emoticon.jpg" alt="glassEmoticon" class="emoticon">
-            </aside>
-        </article>
-    </main>
+            </nav>
+        </div>
+        <nav>
+            <span class="material-symbols-outlined">Menu</span>
+            <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+            <h1>ArchTec</h1>
+        </nav>
+        <header>
+            <div class="header">
+                <h1>Grêmio ArchTec</h1>
+                <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
+            </div>
+        </header>
+        <main>
+            <article>
+                <aside class="prop">
+                    <h1>Propóstas</h1>
+                    <p>Temos a missão de transformar nossa escola em um lugar melhor!</p>
+                </aside>
+                <aside id="cant">
+                    <h2>Aumentar a variedade da cantina</h2>
+                    <img src="estilos/imagens/hungry-emoticon.png" alt="EmoticonHungry" class="emoticon">
+                    <p>A variedade da cantina atualmente oferecida é limitada, o que pode levar a uma falta de opções para os estudantes. Propomos uma maior variedade de alimentos na cantina, como doces e salgados novos, para que a experiência dos estudantes seja melhor.</p>
+                </aside>
+                <aside id="dc">
+                    <h2>Projeto D.C.</h2>
+                    <p>O projeto D.C. (Dever de Casa) é um projeto que visa ajudar os alunos a se informarem sobre as tarefas pendentes, onde vamos colocar um quadro, onde os professores colocaram as tarefas pendentes. Propomos a implementação do D.C. visando melhorar a experiência dos alunos e promover um aprendizado mais eficaz, afinal, quem nunca esqueceu do dever de casa ne?.</p>
+                    <img src="estilos/imagens/dc-emoticon.jpg" alt="dcEmoticon" class="emoticon">
+                </aside>
+                <aside id="camp">
+                    <h2>Campeonatos variados</h2>
+                    <img src="estilos/imagens/camp-emoticon.jpg" alt="camp-emoticon" class="emoticon">
+                    <p class="p">Nosso grêmio acredita que o esporte e as competições saudáveis são essenciais para promover integração, diversão e espírito de equipe entre os estudantes. Por isso, organizamos e incentivamos a participação em diversos campeonatos ao longo do ano.</p>
+                    <p>Nossa ideia é incluir <strong>outras categorias</strong>, para que a interclasse, não seja apenas de futebol, temos algumas sujestões</p>
+                    <ul>
+                        <li>Campeonatos de <strong>jogos eletrônicos</strong>(Free Fire, E-Football, Clash Royale, etc.)</li>
+                        <li>Xadrex e Damas</li>
+                        <li>Queimada</li>
+                        <li>Futebol</li>
+                        <li>Entre outros...</li>
+                    </ul>
+                </aside>
+                <aside id="pass">
+                    <h2>Mais passeios</h2>
+                    <p>Explorar o mundo além da sala de aula é fundamental para enriquecer o aprendizado e fortalecer os laços entre os estudantes. Nosso grêmio está comprometido em organizar passeios diversos, que atendam aos interesses e necessidades de todos os alunos. Nosso grêmio propõe apresentar a ideia aos responsáveis da escola, para adicionar-mos, passeios variadis, não apenas para o Hopi Hari no final do ano.</p>
+                    <img src="estilos/imagens/oass-emoticon.jpg" alt="pass-emoticon" class="emoticon">
+                </aside>
+                <aside id="sug">
+                    <h2>Sugestões</h2>
+                    <img src="estilos/imagens/sugest-emoticon.jpg" alt="sugestEmoticon" class="emoticon">
+                    <p>Todo mês iremos passar com uma caixa nas salas para que vocês deem sugestões sobre o que melhorar na escola e no grêmio</p>
+                </aside>
+                <aside id="outr">
+                    <h2>Outros...</h2>
+                    <p>Lembre-se, que estamos sempre aberto a novas sugestões, como mencionado nas sugestões.</p>
+                    <img src="estilos/imagens/glass-emoticon.jpg" alt="glassEmoticon" class="emoticon">
+                </aside>
+            </article>
+        </main>
+    </div>
     <footer>
         <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
         <p>Site criado por <a href="https://github.com/AppleHunters/" target="_blank">&copy;AppleHunters</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
