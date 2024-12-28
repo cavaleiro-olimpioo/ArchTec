@@ -43,7 +43,7 @@ p{
 
 main{ /*Ta dando erro com a rolagem vertical do main, e eu sei la como resolve ;-;, mas eu sei que e por conta do align-itens. Se tu quiser testar, diminui a altura do navegador*/
     background-color: white;
-    width: 400px;
+    width: 450px;
     text-align: center;
     height: 650px;
     border-radius: 10px;
