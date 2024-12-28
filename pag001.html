@@ -19,7 +19,7 @@
             .prop{
                 width: 90%;
             }
-            #menu{
+            div.menu{
                 width: 600px;
             }
         }
@@ -28,18 +28,18 @@
 <body>
     <div id="main">
         <div class="menu">
-            <span  id="close" class="material-symbols-outlined">Close</span>
+            <span  id="close" onclick="menuOff()" class="material-symbols-outlined">Close</span>
             <nav class="menu" class="hidden">
                 <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
                 <h1>ArchTec</h1>
                 <ul>
-                    <li><a href="pag001.html">Página inicial</a></li>
-                    <li><a href="pag002.html">Nossa equipe</a></li>
+                    <li><a href="pag001.html" onclick="menuOff()">Página inicial</a></li>
+                    <li><a href="pag002.html" onclick="menuOff()">Nossa equipe</a></li>
                 </ul>
             </nav>
         </div>
         <nav>
-            <span class="material-symbols-outlined">Menu</span>
+            <span class="material-symbols-outlined" onclick="menuOn()">Menu</span>
             <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
             <h1>ArchTec</h1>
         </nav>
