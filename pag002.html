@@ -1,90 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participantes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
-    <!--Colocar Css-->
-</head>
-<body>
-    <span class="material-symbols-outlined">Menu</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArchTec</title>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
+        <link rel="stylesheet" href="estilos/pag.css">
+        <link rel="shortcut icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+        <style>
+            @media screen and (min-width: 700px) and (max-width: 1000px) {
+                aside.inf p{
+                    font-size: 1.5em;
+                }
+            }
+            @media screen and (min-width: 900px) {
+                article{
+                    flex-flow: row wrap;
+                    justify-content: center;
+                }
+                aside{
+                    width: 400px;
+                }
+                aside.prop{
+                    width: 90%;
+                }
+            }
+            header{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
+            aside img{
+                width: 90%;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+            aside{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .reverse{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
+            img.ico{
+                width: 100%;
+                vertical-align: middle;
+            }
+            li{
+                vertical-align: middle;
+                margin-left: 20px;
+            }
+            aside.rs a{
+                width: 20%;
+                margin: 10px;
+            }
+            aside.rs{
+                width: 100%;
+                box-shadow: none;
+                border: none;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+            aside.rs h2{
+                font-size: 2em;
+            }
+            aside.inf{
+                box-shadow: none;
+                border: none;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                text-align: center;
+                font-size: 1.5em;
+            }
+            aside.inf p{
+                text-decoration: underline;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            aside.pai{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
+            article{
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="menu">
+                <span  id="close" onclick="menuOff()" class="material-symbols-outlined">Close</span>
+                <nav class="menu" class="hidden">
+                    <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+                    <h1>ArchTec</h1>
+                    <ul>
+                        <li><a href="pag001.html" onclick="menuOff()">Página inicial</a></li>
+                        <li><a href="pag002.html" onclick="menuOff()">Nossa equipe</a></li>
+                    </ul>
+                </nav>
+            </div>
             <nav>
-                <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
-                <h1>ArchTec</h1>
-                <ul>
-                    <li>
-                        <a href="pag001.html">Pagina Inicial</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <span class="material-symbols-outlined">Menu</span>
+                <span class="material-symbols-outlined" onclick="menuOn()">Menu</span>
                 <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
                 <h1>ArchTec</h1>
             </nav>
             <header>
-                <h1>
-                    Grêmio ArchTec
-                </h1>
+                <h1>Grêmio ArchTec</h1>
                 <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
             </header>
             <main>
-                <aside>
-                    <img src="estilos/imagens/Guilherme Arnaldi.jpg" alt="">
-                    <ul>
-                        <li>
-                            Nome: Guilherme Arnaldi 
-                        </li>
-                        <li>
-                            Idade: 14
-                        </li>
-                        <li>
-                            Sala: ???
-                        </li>
-                        <li>
-                            Redes Sociais: <a href="https://github.com/cavaleiro-olimpioo">Github</a>, <a href="https://www.instagram.com/guilherme_arnaldi._/">instagram</a>
-                        </li>
-                    </ul>
-                </aside>
-                <aside>
-                    <img src="estilos/imagens/victtor pre cobol.jpg" alt="">
-                    <ul>
-                        <li>
-                            Nome: Victtor Henrique
-                        </li>
-                        <li>
-                            Idade: 13
-                        </li>
-                        <li>
-                            Sala: ???
-                        </li>
-                        <li>
-                            Redes Sociais: <a href="https://www.tiktok.com/@jabuti_cearence?_t=8sayaiDSevd&_r=1 ">TikTok</a>
-                        </li>
-                    </ul>
-                </aside>
-                <aside>
-                    <img src="estilos/imagens/Matheus Felix.jpg" alt="">
-                    <ul>
-                        <li>
-                            Nome: Matheus Felix
-                        </li>
-                        <li>
-                            Idade: 13
-                        </li>
-                        <li>
-                            Sala: ???
-                        </li>
-                        <li>
-                            Redes Sociais: <a href="https://www.tiktok.com/@mag3g5?_t=8saylG1bHTJ&_r=1 ">TikTok</a>, <a href="https://github.com/Matheus-Felixxx">GitHub</a>, <a href="https://www.instagram.com/wmatheus_felix/">Instagram</a>
-                        </li>
-                    </ul>
-                </aside>
+                <article>
+                    <aside class="prop">
+                        <h1>Membros</h1>
+                        <p>Conheça nossa equipe multidisciplinar!</p>
+                    </aside>
+                    <aside class="pai">
+                        <img src="estilos/imagens/Guilherme Arnaldi.jpg" alt="">
+                        <aside class="inf">
+                            <p>Nome: Guilherme Arnaldi</p>
+                            <p>Idade: 14y</p>
+                            <p>Sala: 9º F</p>
+                        </aside>
+                        <aside class="rs">
+                            <h2>Redes Sociais</h2>
+                            <a href="https://github.com/cavaleiro-olimpioo/" target="_blank"><img src="estilos/imagens/ico-github.jpg" class="ico" alt="github"></a>
+                            <a href="https://Instagram.com/guilherme_arnaldi._/" target="_blank"><img src="estilos/imagens/ico-instagram.jpg" class="ico" alt="Instagram"></a>
+                            <a href="https://www.youtube.com/@cavaleiro_olimpio3864" target="_blank"><img src="estilos/imagens/ico-youtube.jpg" class="ico" alt="YouTube"></a>
+                        </aside>
+                    </aside>
+                    <aside class="reverse">
+                        <img src="estilos/imagens/victtor pre cobol.jpg" alt="">
+                            <aside class="inf">
+                                <p>Nome: Victtor Henrique</p>
+                                <p>Idade: 13</p>
+                                <p>Sala: 9º F</p>
+                            </aside>
+                            <aside class="rs">
+                                <h2>Redes Sociais</h2>
+                                <a href="https://www.tiktok.com/@jabuti_cearence?_t=8sayaiDSevd&_r=1" target="_blank"><img src="estilos/imagens/ico-tiktok.png" class="ico" alt="tiktok"></a>
+                            </aside>
+                    </aside>
+                    <aside class="pai">
+                        <img src="estilos/imagens/Matheus Felix.jpg" alt="">
+                            <aside class="inf">
+                                <p>Nome: Matheus Felix</p>
+                                <p>Idade: 13</p>
+                                <p>Sala: 9º A</p>
+                            </aside>
+                            <aside class="rs">
+                                <h2>Redes Sociais</h2>
+                                <a href="https://github.com/Matheus-Felixxx/" target="_blank"><img src="estilos/imagens/ico-github.jpg" class="ico" alt="github"></a>
+                                <a href="https://www.instagram.com/wmatheus_felix/" target="_blank"><img src="estilos/imagens/ico-instagram.jpg" class="ico" alt="instagram"></a>
+                                <a href="https://www.tiktok.com/@mag3g5?_t=8saylG1bHTJ&_r=1" target="_blank"><img src="estilos/imagens/ico-tiktok.png" class="ico" alt="tiktok"></a>
+                            </aside>
+                    </aside>
+                </article>
             </main>
-   <footer>
-    <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
-    <p>Site feito por <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
-</footer>
-</body>
+        </div>
+        <footer>
+            <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
+            <p>Site feito por <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
