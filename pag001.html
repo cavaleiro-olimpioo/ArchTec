@@ -8,7 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
     <style>
+        @media screen and (min-width: 600px) and (max-width: 1100px){
+            #popup{
+                width: 300px;
+            }
+        }
         @media screen and (min-width: 1100px) {
+            #popup{
+                width: 500px;
+            }
             article{
                 flex-flow: row wrap;
                 width: 100vw
@@ -23,9 +31,26 @@
                 width: 600px
             }
         }
+        @media screen and (max-height: 440px) {
+            #popup{
+                margin-top: 0px;
+                height: 100%;
+                overflow-y: scroll;
+            }
+        }
     </style>
 </head>
 <body>
+    <div id="popup">
+        <div id="popup-content">
+            <span class="material-symbols-outlined" onclick="closePop()" id="close">Close</span>
+            <div class="popimg">
+                <img src="estilos/imagens/Joia" alt="Joia">
+            </div>
+            <h1>Vote em nós!</h1>
+            <p>Precisamos da sua ajuda mais do que nunca! Neste momento seu voto é essencial para que possamos melhorar a escola e transforma-lá em um ambiente melhor e agradável, votar <strong>00</strong> é votar conscientemente</p>
+        </div>
+    </div>
     <div class="main">
         <div class="menu">
             <span  id="close" onclick="menuOff()" class="material-symbols-outlined">Close</span>
@@ -100,6 +125,7 @@
         <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
         <p>Site criado por <a href="https://github.com/AppleHunters/" target="_blank">&copy;AppleHunters</a></p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/popup.js"></script>
 </body>
 </html>
