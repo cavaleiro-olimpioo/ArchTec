@@ -71,7 +71,7 @@ article{
 
 .minlogo{
     width: 50px;
-    margin: 0px 10px;
+    margin: 0px 10px 0px 60px;
 }
 nav{
     display: flex;
@@ -149,13 +149,25 @@ footer a{
     text-decoration: underline;
 }
 
-div.menu{
+div.menu {
     position: fixed;
     height: 100%;
     background-color: #ffffff;
     width: 60%;
     box-shadow: 100px 0px 1000px black;
-    display: none;
+    transform: translateX(-100%);  /* Inicialmente fora da tela */
+    opacity: 0;  /* Menu invisível */
+    transition: transform 0.3s ease, opacity 0.3s ease;  /* Transição suave */
+}
+
+div.menu.show {
+    transform: translateX(0);  /* Move o menu para a tela */
+    opacity: 1;  /* Torna o menu visível */
+}
+
+div.menu.hide {
+    transform: translateX(-100%);  /* Move o menu para fora da tela */
+    opacity: 0;  /* Torna o menu invisível */
 }
 nav.menu{
     display: flex;
@@ -180,9 +192,54 @@ li a:hover{
     font-weight: bolder;
 }
 
+button.togglemenu{  /*Config do simbolo do menu*/
+    z-index: 999;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+} 
 
-
-.material-symbols-outlined:hover{
+span.linha{
+    position: relative;
+    display: block;
+    background-color: black;
+    margin: 5px auto;
+    height: 3px;
+    width: 35px;
+    transform-origin: center;
+    transition: 0.3s ease-in-out;
+}
+    
+.material-symbols-outlined{
     cursor: pointer;
 }
 
+.x .linha:nth-child(2){
+    width: 0px;
+    transition: 0.2s ease-in-out;
+}
+
+.x .linha:nth-child(1){
+    transform: translateY(8.5px) rotate(-45deg);
+    transition: 0.2s ease-in-out;
+}
+
+.x .linha:nth-child(3){
+    transform: translateY(-8.5px) rotate(45deg);
+    transition: 0.2s ease-in-out;
+}
+
+.menu .minlogo{
+    margin-left: 10px;
+}
+
+.none{
+    width: 0px;
+    transition: 0.3s ea;
+    color: transparent;
+}
