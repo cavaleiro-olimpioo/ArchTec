@@ -11,20 +11,40 @@
         body{
             overflow-y: hidden;
         }
-        #popup{
+        #popup {
             margin: auto;
             background-color: white;
             width: 50%;
-            margin: auto;
-            margin-top: 100px;
-            left: 50%;
-            translate: -50%;
             position: fixed;
             z-index: 1000;
             padding: 20px;
-            animation: 0.3s;
+            animation: fadeIn 0.3s ease-in-out; /* Animação de entrada */
             border: 3px solid var(--amarelo);
             box-shadow: 0px 0px 50px var(--amarelo);
+            left: 50%;
+            translate: -50%;
+            margin-top: 100px;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
         }
         .popimg{
             width: 100%;
@@ -68,7 +88,7 @@
                 width: 90%
             }
             div.menu{
-                width: 600px
+                width: 400px
             }
         }
         @media screen and (max-height: 440px) {
@@ -92,8 +112,12 @@
         </div>
     </div>
     <div class="main">
+        <button class="togglemenu" onclick="menu()"> <!--Simbolo do menu-->
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
         <div class="menu">
-            <span  id="close" onclick="menuOff()" class="material-symbols-outlined">Close</span>
             <nav class="menu" class="hidden">
                 <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
                 <h1>ArchTec</h1>
@@ -104,7 +128,6 @@
             </nav>
         </div>
         <nav>
-            <span class="material-symbols-outlined" onclick="menuOn()">Menu</span>
             <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
             <h1>ArchTec</h1>
         </nav>
