@@ -69,6 +69,10 @@ article{
     justify-content: center;
 }
 
+.main{
+    position: relative;
+}
+
 .minlogo{
     width: 50px;
     margin: 0px 10px 0px 60px;
@@ -194,7 +198,7 @@ li a:hover{
 
 button.togglemenu{  /*Config do simbolo do menu*/
     z-index: 999;
-    position: fixed;
+    position: absolute;
     width: 50px;
     height: 50px;
     margin-top: 5px;
