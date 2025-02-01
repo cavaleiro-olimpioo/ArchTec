@@ -247,3 +247,13 @@ span.linha{
     transition: 0.3s ea;
     color: transparent;
 }
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
