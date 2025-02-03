@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Propóstas Extras</title>
+    <link rel="stylesheet" href="estilos/pag.css">
+    <style>
+        @media screen and (min-width: 500px) and (max-width: 768px) {
+          #background{
+            background-color: #003eea;
+            padding: 0px;
+            margin: 0px;
+          }
+        }
+    </style>
 </head>
 <body>
-    
+<div class="main">
+    <button class="togglemenu" onclick="menu()"> <!--Simbolo do menu-->
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+    </button>
+    <div class="menu">
+        <nav class="menu" class="hidden">
+            <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+            <h1>ArchTec</h1>
+            <ul>
+                <li><a href="pag001.html" onclick="menuOff()">Página inicial</a></li>
+                <li><a href="pag002.html" onclick="menuOff()">Nossa equipe</a></li>
+                <li><a href="pag003.html" onclick="menuOff()">Propóstas extras</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav>
+        <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+        <h1>ArchTec</h1>
+    </nav>
+    <header>
+        <div class="header">
+            <h1>Grêmio ArchTec</h1>
+            <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
+        </div>
+    </header>
+    <div id="background">
+        <main>
+            <aside>
+                <h1>Propóstas Extras</h1>
+                <p>Saiba mais sobre o que queremos ascionar na escola</p>
+            </aside>
+            <aside>
+                <h2>Cursos Extracurriculares</h2>
+                <p>O que queremos nesse grêmio é ter variedades com cursos diferentes.
+                    queremos oferecer cursos como: HTML5, CSS3 e JavaScript
+                    isso será importante para desenvolvimento web
+                    com HTML5, fazermos páginas,  Com CSS3, as estilizando
+                    o JavaScript colocaremos interaçãoes no site
+                    esses cursos ajudaram em sua carreira e no mercado de trabalho
+                    queremos ter certeza que vocês aprendam completamente
+                    esperamos que desfrutem dessa oportunidade de crescimento.</p>
+            </aside>
+            <aside>
+                <h2>lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, in pariatur dolor dicta iste cupiditate doloremque error at nemo laudantium aperiam non ea consequatur iure, dolore eveniet corporis sed sapiente?</p>
+            </aside>
+            <aside>
+                <h2>lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid eveniet voluptate enim quae corrupti doloribus. Facilis at, recusandae non aliquid vero explicabo et molestias voluptatem nemo, praesentium, ipsa blanditiis.</p>
+            </aside>
+            <aside>
+                <h2>lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora sint dolor esse, consectetur vel doloribus natus impedit non, corporis fuga ad voluptates dolores, dignissimos cupiditate? Cumque, fuga quibusdam. Molestias!</p>
+            </aside>
+        </main>
+    </div>
+</div>
+<footer>
+    <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
+    <p>Site criado por <a href="https://github.com/AppleHunters/" target="_blank">&copy;AppleHunters</a></p>
+</footer>
+<script src="scripts/menu.js"></script>
 </body>
 </html>
