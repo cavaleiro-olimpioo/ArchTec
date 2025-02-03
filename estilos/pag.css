@@ -159,10 +159,12 @@ div.menu {
     background-color: #ffffff;
     width: 60%;
     box-shadow: 100px 0px 1000px black;
-    transform: translateX(-100%);  /* Inicialmente fora da tela */
-    opacity: 0;  /* Menu invisível */
-    transition: transform 0.3s ease, opacity 0.3s ease;  /* Transição suave */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1100;  /* Maior que o header */
 }
+
 
 div.menu.show {
     transform: translateX(0);  /* Move o menu para a tela */
@@ -197,7 +199,7 @@ li a:hover{
 }
 
 button.togglemenu{  /*Config do simbolo do menu*/
-    z-index: 999;
+    z-index: 9999;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -256,4 +258,23 @@ span.linha{
         opacity: 0;
         visibility: hidden;
     }
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+.cpem-caminho{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cpem-caminho:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
