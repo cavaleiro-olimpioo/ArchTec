@@ -6,108 +6,116 @@
     <title>Propóstas Extras</title>
     <link rel="stylesheet" href="estilos/pag.css">
     <style>
+        /* Estilos para diferentes tamanhos de tela */
         @media screen and (min-width: 500px) and (max-width: 690px) {
-        #background {
-            background-color: #003eea;
-            display: flex;
+            #background {
+                background-color: #003eea;
+                display: flex;
+            }
+            #titulo > h1{
+                transform: translate(110px);
+            }
+            #titulo > p{
+                text-align: center;
+                transform: translate(50px);
+            }
+            .tema1 > p{
+                text-align: center;
+                transform: translate(45px);
+            }
         }
-       #titulo > h1{
-        transform: translate(110px);
-       }
-       #titulo > p{
-        text-align: center;
-        transform: translate(50px);
-       }
-       
-       .tema1 > p{
-        text-align: center;
-        transform: translate(45px);
-       }
-        }
+        
         @media screen and (min-width: 690px) and (max-width: 768px) { 
-        #background {
-            background-color: #003eea;
-            display: flex;
+            #background {
+                background-color: #003eea;
+                display: flex;
+            }
+            #titulo > h1{
+                transform: translate(210px);
+            }
+            #titulo > p{
+                text-align: center;
+                transform: translate(50px);
+            }
+            .tema1 > p{
+                text-align: center;
+                transform: translate(45px);
+            }
         }
-        #titulo > h1{
-        transform: translate(210px);
-       }
-       #titulo > p{
-        text-align: center;
-        transform: translate(50px);
-       }
-       .tema1 > p{
-        text-align: center;
-        transform: translate(45px);
-       }
-        }
+        
         @media screen and (min-width: 768px) and (max-width: 872px) {
             #background {
-            background-color: #003eea;
-            display: flex;
-            
+                background-color: #003eea;
+                display: flex;
+            }
+            #titulo > h1{
+                transform: translate(260px);
+                display: flex;
+                flex-flow: row wrap;
+            }
+            #titulo > p{
+                text-align: center;
+                transform: translate(70px);
+            }
+            .tema1 > p{
+                text-align: center;
+                transform: translate(75px);
+            }
         }
-        #titulo > h1{
-        transform: translate(260px);
-        display: flex;
-        flex-flow: row wrap;
-       }
-       #titulo > p{
-        text-align: center;
-        transform: translate(70px);
-       }
-       .tema1 > p{
-        text-align: center;
-        transform: translate(75px);
-       }
-        }
-        @media screen and (min-width: 872px) and (max-width: 900px){ /*o titulo não ta ficando alinhado resolve ai favo ;-;*/
+        
+        @media screen and (min-width: 872px) and (max-width: 900px){ 
+            /* Ajuste do título para centralizar corretamente */
             #background {
-            background-color: #003eea;
-            display: flex;
+                background-color: #003eea;
+                display: flex;
+            }
+            #titulo > h1{
+                transform: translate(330px);
+            }
+            #titulo > p{
+                text-align: center;
+                transform: translate(70px); 
+                margin: 10px;
+            }
+            .tema1 > p{
+                text-align: center;
+                transform: translate(75px);
+            }
         }
-        #titulo > h1{
-        transform: translate(330px);
-       }
-       #titulo > p{
-        text-align: center;
-        transform: translate(70px); 
-        margin: 10px;
-       }
-       .tema1 > p{
-        text-align: center;
-        transform: translate(75px);
-       }
-       }
-       @media screen and (min-width: 900px) and (max-width: 2500px){ /*mesmo caso aqui arruma aqui favo estou com depressaão*/
+        
+        @media screen and (min-width: 900px) and (max-width: 2500px){ 
+            /* arrume o alinhamento do titulo */
             #background {
-            background-color: #003eea;
-            display: flex;
+                background-color: #003eea;
+                display: flex;
+            }
+            #titulo > h1{
+                transform: translate(410px);
+                display: flex;
+                flex-flow: column nowrap;
+            }
+            #titulo > p{
+                text-align: center;
+                transform: translate(70px); 
+                margin: 40px;
+            }
+            .tema1 > p{
+                text-align: center;
+                transform: translate(75px);
+            }
         }
-        #titulo > h1{
-        transform: translate(410px);
-        display: flex;
-        flex-flow: column nowrap;
-       }
-       #titulo > p{
-        text-align: center;
-        transform: translate(70px); 
-        margin: 40px;
-       }
-       .tema1 > p{
-        text-align: center;
-        transform: translate(75px);
-       }
-       }
     </style>
 </head>
 <body>
 <div class="main">
-    <button class="togglemenu" onclick="menu()"> <!--Simbolo do menu-->
+    <!-- Botão do menu hamburguer -->
+    <button class="togglemenu" onclick="menu()">
         <span class="linha"></span>
         <span class="linha"></span>
         <span class="linha"></span>
     </button>
+    
+    <!-- Menu de navegação lateral -->
     <div class="menu">
         <nav class="menu" class="hidden">
             <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
@@ -119,52 +127,60 @@
             </ul>
         </nav>
     </div>
-    <nav>
-        <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
-        <h1>ArchTec</h1>
-    </nav>
+    
+    <!-- Cabeçalho do site -->
     <header>
         <div class="header">
             <h1>Grêmio ArchTec</h1>
             <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
         </div>
     </header>
+    
     <div id="background">
         <main>
+            <!-- Título principal da página -->
             <aside id="titulo">
                 <h1>Propóstas Extras</h1>
                 <p>Saiba mais sobre o que queremos adicionar na escola</p>
             </aside>
+            
+            <!-- Seção de cursos extracurriculares -->
             <aside class="tema1">
                 <h2>Cursos Extracurriculares</h2>
-                <p>O que queremos nesse grêmio é ter variedades com cursos diferentes.
-                    queremos oferecer cursos como: HTML5, CSS3 e JavaScript
-                    isso será importante para desenvolvimento web
-                    com HTML5, fazermos páginas,  Com CSS3, as estilizando
-                    o JavaScript colocaremos interaçãoes no site
-                    esses cursos ajudaram em sua carreira e no mercado de trabalho
-                    queremos ter certeza que vocês aprendam completamente
-                    esperamos que desfrutem dessa oportunidade de crescimento.</p>
+                <p>Queremos oferecer cursos como HTML5, CSS3 e JavaScript,
+                   essenciais para desenvolvimento web e mercado de trabalho.</p>
             </aside>
+            
+            <!-- Seção do Clube de Debates -->
             <aside class="tema1">
                 <h2>Clube de Debates</h2>
-                <p>Queremos adicionar um "Clube de Debates", onde os alunos irão discutir e argumentar sobre algum tema especifico, essa habilidade e importantetanto na escola como em outros lugares como no mercado de trabalho.</p>
+                <p>O Clube de Debates permitirá que os alunos discutam e argumentem
+                   sobre temas diversos, desenvolvendo habilidades essenciais.</p>
             </aside>
+            
+            <!-- Seção de Trabalhos Colaborativos com Professores -->
             <aside class="tema1">
                 <h2>Trabalhos em Colaboração dos Professores</h2>
-                <p>Desejamos fazer trablhos que tem envolvimento com a materia dos professores, por exemplo teatros. </p>
+                <p>Queremos incentivar projetos interdisciplinares, como teatros
+                   e outras atividades alinhadas com as matérias escolares.</p>
             </aside>
+            
+            <!-- Seção extra de conteúdo genérico -->
             <aside class="tema1">
-                <h2>lorem</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora sint dolor esse, consectetur vel doloribus natus impedit non, corporis fuga ad voluptates dolores, dignissimos cupiditate? Cumque, fuga quibusdam. Molestias!</p>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
             </aside>
         </main>
     </div>
 </div>
+
+<!-- Rodapé da página -->
 <footer>
     <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
-    <p>Site criado por <a href="https://github.com/AppleHunters/" target="_blank">&copy;AppleHunters</a></p>
+    <p>Site criado por <a href="https://github.com/AppleHunters/" target="_blank">&copy; AppleHunters</a></p>
 </footer>
+
+<!-- Script para controle do menu -->
 <script src="scripts/menu.js"></script>
 </body>
-</html
+</html>
