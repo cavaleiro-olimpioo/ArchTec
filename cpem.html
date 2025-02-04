@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchTec - CPEMilitares</title>
+    <link rel="stylesheet" href="estilos/pag.css">
+    <link rel="shortcut icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+    <style>
+        @media screen and (min-width: 750px) {
+            aside{
+                width: 700px;
+                margin: 20px auto;
+            }
+            a.cpem-botton{
+                width: 600px;
+            }
+            .prop-cpem h1{
+                font-size: 2em;
+                padding: 10px;
+            }
+        }
+        .prop-cpem{
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 10px;
+        }
+        .prop-cpem h1{
+            color: #425036;
+            font-size: 200%;
+        }
+        .prop-cpem img{
+            display: block;
+            width: 50%;
+        }
+
+        h2{
+            margin: 25px 0px;
+        }
+
+        aside p{
+            text-align: justify;
+            margin-top: 10px;
+            margin: auto;
+            text-indent: 30px;
+            line-height: 25px;
+        }
+
+        .cpem-botton{
+            background-image: url('estilos/imagens/adbc8445-24c6-4fff-abe5-4f021618e9f2.jpeg');
+            display: block;
+            margin: 25px auto;
+            padding: 10px;
+            width: 90%;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            text-shadow: 0px 0px 5px black;
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 10px 10px 20px #00000080;
+            transition: 0.2s ease-in-out;
+        }
+
+        .cpem-botton:hover{
+            padding: 15px;
+            transition: 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <button class="togglemenu" onclick="menu()"> <!--Simbolo do menu-->
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+    </button>
+    <div class="menu">
+        <nav class="menu" class="hidden">
+            <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+            <h1>ArchTec</h1>
+            <ul>
+                <li><a href="pag001.html" onclick="menuOff()">Página inicial</a></li>
+                <li><a href="pag002.html" onclick="menuOff()">Nossa equipe</a></li>
+                <li><a href="pag003.html" onclick="menuOff()">Propóstas extras</a></li>
+                <hr>
+            </ul>
+            <a href="cpem.html" class="cpem-caminho" onclick="menuOff()">
+                <div>Junte-se ao CPEMilitares!</div>
+            </a>
+        </nav>
+    </div>
+    <nav>
+        <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+        <h1>ArchTec</h1>
+    </nav>
+    <header>
+        <div class="header">
+            <p>Toda honra e glória ao nosso senhor Jesus Cristo</p>
+            <h1>Grêmio ArchTec</h1>
+            <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
+        </div>
+    </header>
+    <main>
+        <article>
+            <aside class="prop-cpem">
+                <h1>Junte-se ao CPEMilitares!</h1>
+                <img src="estilos/imagens/logo-cpem.jpg" alt="logo-cpem">
+            </aside>
+            <aside>
+                <h2>O que é o CPEMilitares?</h2>
+                <p>
+                    O Curso Preparatório para Escolas Militares (CPEM) tem o objetivo de auxiliar jovens e adolescentes a se prepararem tanto para o ingresso em escolas militares quanto para a vida no mundo civil. Com uma abordagem única, o curso oferece aulas ministradas por um sargento experiente, que compartilha seus conhecimentos sobre assuntos militares, como legislação, código penal, disciplina militar e outros tópicos essenciais para a formação de um futuro militar. Além disso, os alunos recebem uma preparação sólida em Português, Redação e Matemática, garantindo um desempenho eficiente nas provas de concursos.
+                </p>
+                <p>
+                    Um dos grandes diferenciais do CPEM é a ênfase na preparação física. Todos os dias, os alunos realizam exercícios físicos e dinâmicas que fortalecem a disciplina e a resistência, como a tradicional regra de "errou a pergunta, paga flexão". Além disso, há a preparação específica para o Teste de Aptidão Física (TAF), fundamental para os concursos militares. Essa rotina fortalece não apenas o corpo, mas também a mentalidade de superação, disciplina e trabalho em equipe.
+                </p>
+                <p>
+                    Embora tenha um foco na carreira militar, o CPEM também se preocupa com a formação integral dos alunos, preparando-os para desafios tanto no meio militar quanto no mundo civil. O curso desenvolve habilidades acadêmicas, comportamentais e físicas que serão essenciais em qualquer trajetória profissional, garantindo uma preparação completa para o futuro. 
+                </p>
+            </aside>
+            <section>
+                <a class="cpem-botton" target="_blank" href="https://cpem.vercel.app">
+                    Saiba Mais!
+                </a>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
+        <p>Site criado por <a href="https://github.com/AppleHunters/" target="_blank">&copy;AppleHunters</a></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
