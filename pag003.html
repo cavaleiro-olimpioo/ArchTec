@@ -6,13 +6,99 @@
     <title>Propóstas Extras</title>
     <link rel="stylesheet" href="estilos/pag.css">
     <style>
-        @media screen and (min-width: 500px) and (max-width: 768px) {
-          #background{
+        @media screen and (min-width: 500px) and (max-width: 690px) {
+        #background {
             background-color: #003eea;
-            padding: 0px;
-            margin: 0px;
-          }
+            display: flex;
         }
+       #titulo > h1{
+        transform: translate(110px);
+       }
+       #titulo > p{
+        text-align: center;
+        transform: translate(50px);
+       }
+       
+       .tema1 > p{
+        text-align: center;
+        transform: translate(45px);
+       }
+        }
+        @media screen and (min-width: 690px) and (max-width: 768px) { 
+        #background {
+            background-color: #003eea;
+            display: flex;
+        }
+        #titulo > h1{
+        transform: translate(210px);
+       }
+       #titulo > p{
+        text-align: center;
+        transform: translate(50px);
+       }
+       .tema1 > p{
+        text-align: center;
+        transform: translate(45px);
+       }
+        }
+        @media screen and (min-width: 768px) and (max-width: 872px) {
+            #background {
+            background-color: #003eea;
+            display: flex;
+            
+        }
+        #titulo > h1{
+        transform: translate(260px);
+        display: flex;
+        flex-flow: row wrap;
+       }
+       #titulo > p{
+        text-align: center;
+        transform: translate(70px);
+       }
+       .tema1 > p{
+        text-align: center;
+        transform: translate(75px);
+       }
+        }
+        @media screen and (min-width: 872px) and (max-width: 900px){ /*o titulo não ta ficando alinhado resolve ai favo ;-;*/
+            #background {
+            background-color: #003eea;
+            display: flex;
+        }
+        #titulo > h1{
+        transform: translate(330px);
+       }
+       #titulo > p{
+        text-align: center;
+        transform: translate(70px); 
+        margin: 10px;
+       }
+       .tema1 > p{
+        text-align: center;
+        transform: translate(75px);
+       }
+       }
+       @media screen and (min-width: 900px) and (max-width: 2500px){ /*mesmo caso aqui arruma aqui favo estou com depressaão*/
+            #background {
+            background-color: #003eea;
+            display: flex;
+        }
+        #titulo > h1{
+        transform: translate(410px);
+        display: flex;
+        flex-flow: column nowrap;
+       }
+       #titulo > p{
+        text-align: center;
+        transform: translate(70px); 
+        margin: 40px;
+       }
+       .tema1 > p{
+        text-align: center;
+        transform: translate(75px);
+       }
+       }
     </style>
 </head>
 <body>
@@ -45,11 +131,11 @@
     </header>
     <div id="background">
         <main>
-            <aside>
+            <aside id="titulo">
                 <h1>Propóstas Extras</h1>
-                <p>Saiba mais sobre o que queremos ascionar na escola</p>
+                <p>Saiba mais sobre o que queremos adicionar na escola</p>
             </aside>
-            <aside>
+            <aside class="tema1">
                 <h2>Cursos Extracurriculares</h2>
                 <p>O que queremos nesse grêmio é ter variedades com cursos diferentes.
                     queremos oferecer cursos como: HTML5, CSS3 e JavaScript
@@ -60,15 +146,15 @@
                     queremos ter certeza que vocês aprendam completamente
                     esperamos que desfrutem dessa oportunidade de crescimento.</p>
             </aside>
-            <aside>
-                <h2>lorem</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, in pariatur dolor dicta iste cupiditate doloremque error at nemo laudantium aperiam non ea consequatur iure, dolore eveniet corporis sed sapiente?</p>
+            <aside class="tema1">
+                <h2>Clube de Debates</h2>
+                <p>Queremos adicionar um "Clube de Debates", onde os alunos irão discutir e argumentar sobre algum tema especifico, essa habilidade e importantetanto na escola como em outros lugares como no mercado de trabalho.</p>
             </aside>
-            <aside>
-                <h2>lorem</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid eveniet voluptate enim quae corrupti doloribus. Facilis at, recusandae non aliquid vero explicabo et molestias voluptatem nemo, praesentium, ipsa blanditiis.</p>
+            <aside class="tema1">
+                <h2>Trabalhos em Colaboração dos Professores</h2>
+                <p>Desejamos fazer trablhos que tem envolvimento com a materia dos professores, por exemplo teatros. </p>
             </aside>
-            <aside>
+            <aside class="tema1">
                 <h2>lorem</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora sint dolor esse, consectetur vel doloribus natus impedit non, corporis fuga ad voluptates dolores, dignissimos cupiditate? Cumque, fuga quibusdam. Molestias!</p>
             </aside>
