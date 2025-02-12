@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="estilos/pag.css">
         <link rel="shortcut icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
         <style>
-            @media screen and (min-width: 700px) and (max-width: 1000px) {
+            @media screen and (min-width: 500px) and (max-width: 1000px) {
                 aside.inf p{
                     font-size: 1.5em;
                 }
                 div.menu{
                     width: 400px
                 }
+            
             }
             @media screen and (min-width: 900px) {
                 article{
@@ -58,12 +59,14 @@
                 vertical-align: middle;
                 margin-left: 20px;
             }
+
+        
             aside.rs a{
                 width: 20%;
                 margin: 10px;
             }
             aside.rs{
-                width: 100%;
+                width: 90%;
                 box-shadow: none;
                 border: none;
                 display: flex;
@@ -95,6 +98,25 @@
                 display: flex;
                 justify-content: center;
             }
+            #luimg{ /*não consigui resolver, caso consiga resolver te dou -2 centavos 😉😉😉😉😉😉😉*/
+            width: 600px;
+            height: 600px;
+            transform: translateY(100px);
+           }
+         
+            @media screen and (min-width: 1000px) and (max-width: 2100px) {
+                
+            }
+           #luimg{
+            width: 357px;
+            height: 290px;
+            transform: translate(0px, 10px);
+            margin: 0px;
+            padding: 0px;
+           }
+           #text{
+            transform: translate(0px, -40px);
+           }
         </style>
     </head>
     <body>
@@ -111,7 +133,12 @@
                     <ul>
                         <li><a href="pag001.html" onclick="menuOff()">Página inicial</a></li>
                         <li><a href="pag002.html" onclick="menuOff()">Nossa equipe</a></li>
+                        <li><a href="pag003.html" onclick="menuOff()">Propóstas extras</a></li>
+                        <hr>
                     </ul>
+                    <a href="cpem.html" class="cpem-caminho" onclick="menuOff()">
+                        <div>Junte-se ao CPEMilitares!</div>
+                    </a>
                 </nav>
             </div>
             <nav>
@@ -119,6 +146,7 @@
                 <h1>ArchTec</h1>
             </nav>
             <header>
+                <p>Toda honra e glória ao nosso senhor Jesus Cristo</p>
                 <h1>Grêmio ArchTec</h1>
                 <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
             </header>
@@ -133,7 +161,7 @@
                         <aside class="inf">
                             <p>Nome: Guilherme Arnaldi</p>
                             <p>Idade: 14y</p>
-                            <p>Sala: 9º F</p>
+                            <p>Sala: 9º C</p>
                         </aside>
                         <aside class="rs">
                             <h2>Redes Sociais</h2>
@@ -146,7 +174,7 @@
                         <img src="estilos/imagens/victtor pre cobol.jpg" alt="">
                             <aside class="inf">
                                 <p>Nome: Victtor Henrique</p>
-                                <p>Idade: 13</p>
+                                <p>Idade: 13y</p>
                                 <p>Sala: 9º F</p>
                             </aside>
                             <aside class="rs">
@@ -158,7 +186,7 @@
                         <img src="estilos/imagens/Matheus Felix.jpg" alt="">
                             <aside class="inf">
                                 <p>Nome: Matheus Felix</p>
-                                <p>Idade: 13</p>
+                                <p>Idade: 13y</p>
                                 <p>Sala: 9º A</p>
                             </aside>
                             <aside class="rs">
@@ -167,19 +195,20 @@
                                 <a href="https://www.instagram.com/wmatheus_felix/" target="_blank"><img src="estilos/imagens/ico-instagram.jpg" class="ico" alt="instagram"></a>
                                 <a href="https://www.tiktok.com/@mag3g5?_t=8saylG1bHTJ&_r=1" target="_blank"><img src="estilos/imagens/ico-tiktok.png" class="ico" alt="tiktok"></a>
                             </aside>
-                    </aside>
-                    <aside class="pai">
-                        <img src="estilos/imagens/Lucas-Felix.jpg" alt="">
-                            <aside class="inf">
-                                <p>Nome: Lucas Felix</p>
-                                <p>Idade: 13</p>
-                                <p>Sala: 9º C</p>
+                            
                             </aside>
-                            <aside class="rs">
-                                <h2>Redes Sociais</h2>
-                                <p style="text-align: center;">Nenhuma</p>
+                            <aside class="reverse rev">
+                                <img src="estilos/imagens/Lucas-Felix.jpg" alt="" id="luimg">
+                                    <aside class="inf" id="text">
+                                        <p>Nome: Lucas Felix</p>
+                                        <p>Idade: 13y</p>
+                                        <p>Sala: 9º C</p>
+                                    </aside>
+                                    <aside class="rs">
+                                        <h2>Redes Sociais</h2>
+                                        nenhuma
+                                    </aside>
                             </aside>
-                    </aside>
                 </article>
             </main>
         </div>
