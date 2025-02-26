@@ -278,3 +278,7 @@ hr{
     cursor: pointer;
     text-decoration: underline;
 }
+
+div.menu{
+    width: 400px
+}
