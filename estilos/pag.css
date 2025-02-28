@@ -165,7 +165,12 @@ div.menu {
     z-index: 1100;  /* Maior que o header */
 }
 
+@media screen and (max-width: 750px){
+    div.menu{
+        width: 75px;
+    }
 
+}
 div.menu.show {
     transform: translateX(0);  /* Move o menu para a tela */
     opacity: 1;  /* Torna o menu visível */
