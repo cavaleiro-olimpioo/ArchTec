@@ -54,64 +54,85 @@
         </style>
     </head>
     <body>
-    <div class="main">
-        <button class="togglemenu" onclick="menu()"> <!--Simbolo do menu-->
-            <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
-        </button>
-        <div class="menu">
-            <nav class="menu" class="hidden">
+        <div class="main">
+            <button class="togglemenu" onclick="menu()"> <!--Simbolo do menu-->
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+            <div class="menu">
+                <nav class="menu" class="hidden">
+                    <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
+                    <h1>ArchTec</h1>
+                    <ul>
+                        <li><a href="pag001.html" onclick="menuOff()">Página inicial</a></li>
+                        <li><a href="pag002.html" onclick="menuOff()">Nossa equipe</a></li>
+                        <li><a href="pag003.html" onclick="menuOff()">Propóstas extras</a></li>
+                        <hr>
+                    </ul>
+                    <a href="cpem.html" class="cpem-caminho" onclick="menuOff()">
+                        <div>Junte-se ao CPEMilitares!</div>
+                    </a>
+                </nav>
+            </div>
+            <nav>
                 <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
                 <h1>ArchTec</h1>
-                <ul>
-                    <li><a href="pag001.html" onclick="menuOff()">Página inicial</a></li>
-                    <li><a href="pag002.html" onclick="menuOff()">Nossa equipe</a></li>
-                    <li><a href="pag003.html" onclick="menuOff()">Propóstas extras</a></li>
-                    <hr>
-                </ul>
-                <a href="cpem.html" class="cpem-caminho" onclick="menuOff()">
-                    <div>Junte-se ao CPEMilitares!</div>
-                </a>
-                </ul>
             </nav>
-        </div>
-        <nav>
-            <img src="estilos/imagens/Logo ArchTec.jpg" class="minlogo" alt="Logo">
-            <h1>ArchTec</h1>
-        </nav>
-        <header>
-            <div class="header">
-                <h1>Grêmio ArchTec</h1>
-                <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
-            </div>
-        </header>
-        <div id="background">
+            <header>
+                <div class="header">
+                    <p>Toda honra e glória ao nosso senhor Jesus Cristo</p>
+                    <h1>Grêmio ArchTec</h1>
+                    <p>By <a href="https://github.com/AppleHunters/" target="_blank">&copy; Apple Hunters</a></p>
+                </div>
+            </header>
             <main>
-                <aside id="titulo" class="container">
-                    <h1>Propóstas Extras</h1> 
-                    <p>Saiba mais sobre o que queremos adicionar na escola</p>
-                </aside>
-                <aside>
-                    <h2>Cursos Extracurriculares</h2>
-                    <img src="estilos/imagens/programação.png" alt="">  <!--se conseguir deminuir o espaço das imagens e do texto eu agradeço 😉😉😉😉😉😉😉😉😉-->
-                    <p class="tema1">O objetivo do grêmio é oferecer uma variedade de cursos, incluindo HTML5, CSS3 e JavaScript, que são essenciais para o desenvolvimento web. Com o HTML5, aprenderemos a criar páginas; com o CSS3, vamos estilizar essas páginas; e com o JavaScript, colocaremos interatividade nos sites. Esses cursos serão valiosos para o desenvolvimento profissional dos alunos e para o mercado de trabalho. Queremos garantir que todos aproveitem essa oportunidade de aprendizado completo e crescimento.</p>
-                </aside>
-                <aside>
-                    <h2>Clube de Debates</h2>
-                    <p class="tema1">Queremos adicionar um 'Clube de Debates', onde os alunos poderão discutir e argumentar sobre temas específicos. Essa habilidade é importante tanto na escola quanto em outros ambientes, como no mercado de trabalho.</p>
-                    <img src="estilos/imagens/debate.png" alt="">
-                </aside>
-                <aside>
-                    <h2>Trabalhos em Colaboração dos Professores</h2>
-                    <img src="estilos/imagens/fesso.png" alt="" id="imagem">
-                    <p class="tema1">Desejamos realizar trabalhos que envolvam as matérias dos professores, como, por exemplo, apresentações de teatro.</p>
-
-                </aside>
-            
+                <article>
+                    <aside class="prop">
+                        <h1>Propóstas</h1>
+                        <p>Temos a missão de transformar nossa escola em um lugar ainda melhor!</p>
+                    </aside>
+                    <aside id="cant">
+                        <h2>Cursos extracurriculares</h2>
+                        <img src="estilos/imagens/programação.png" alt="EmoticonStudy" class="emoticon">
+                        <p>O objetivo do grêmio é oferecer uma variedade de cursos, para que os estudantes tenham uma base sobre o que querem realizar no futuro, nossos cursos incluem ate agora, HTML5, CSS3 e JavaScript, que são essenciais para o desenvolvimento web. Com o HTML5, aprenderemos a criar páginas; com o CSS3, vamos estilizar essas páginas; e com o JavaScript, colocaremos interatividade nos sites. Esses cursos serão valiosos para o desenvolvimento profissional dos alunos e para o mercado de trabalho. Queremos garantir que todos aproveitem essa oportunidade de aprendizado completo e crescimento</p>
+                    </aside>
+                    <aside id="dc">
+                        <h2>Clubes</h2>
+                        <p>Queremos tornar a escola um espaço mais dinâmico e interativo com a criação de clubes estudantis em parceria com os professores. Um dos primeiros será o Clube de Debates, onde os alunos poderão argumentar sobre temas variados, desenvolvendo comunicação e pensamento crítico.
+                        Outros clubes, como o Clube de Teatro, para estimular a criatividade e expressão, e o Clube de Geografia, voltado para temas ambientais e geopolíticos, também podem ser criados. Além disso, queremos ouvir as ideias dos próprios alunos para novos clubes, garantindo que todos encontrem um espaço de aprendizado e troca de experiências!</p>
+                        <img src="estilos/imagens/debate.png" alt="dcEmoticon" class="emoticon">
+                    </aside>
+                    <!--<aside id="camp">
+                        <h2>Campeonatos variados</h2>
+                        <img src="estilos/imagens/camp-emoticon.jpg" alt="camp-emoticon" class="emoticon">
+                        <p class="p">O grêmio acredita que o esporte e as competições saudáveis são fundamentais para promover integração, diversão e espírito de equipe entre os alunos. Por isso, organizamos e incentivamos a participação em campeonatos durante o ano. A proposta é expandir as categorias da interclasse, não se limitando apenas ao futebol. Algumas sugestões incluem:</p>
+                        <ul>
+                            <li>Xadrez e Damas</li>
+                            <li>Queimada</li>
+                            <li>Futebol</li>
+                            <li>E outras opções...</li>
+                        </ul>
+                    </aside>
+                    <aside id="pass">
+                        <h2>Mais passeios</h2>
+                        <p>Explorar o mundo além da sala de aula é essencial para enriquecer o aprendizado e fortalecer os laços entre os alunos. Nosso grêmio está comprometido em organizar passeios diversificados, atendendo aos interesses e necessidades de todos. A proposta é apresentar essa ideia aos responsáveis da escola, com o objetivo de diversificar os passeios, não se limitando apenas ao Hopi Hari no final do ano.                    </p>
+                        <img src="estilos/imagens/oass-emoticon.jpg" alt="pass-emoticon" class="emoticon">
+                    </aside>
+                    <aside id="sug">
+                        <h2>Sugestões</h2>
+                        <img src="estilos/imagens/sugest-emoticon.jpg" alt="sugestEmoticon" class="emoticon">
+    
+                        <p>Todo mês, realizaremos uma reunião com os representantes de turma para discutir sugestões e propostas que vocês gostariam que acrescentássemos à escola.</p>
+                    </aside>
+                    <aside id="outr">
+                        <h2>Outros...</h2>
+                        <p>Lembre-se de que estamos sempre abertos a novas sugestões, como já mencionamos anteriormente</p>
+                        <img src="estilos/imagens/glass-emoticon.jpg" alt="glassEmoticon" class="emoticon">
+                    </aside>-->
+                </article>
             </main>
         </div>
-    </div>
     <footer>
         <p>Mas é isso, muito obrigado por sua atenção, um abraço, e fiquem com Deus 😊</p>
         <p>Site criado por <a href="https://github.com/AppleHunters/" target="_blank">&copy;AppleHunters</a></p>
