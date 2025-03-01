@@ -19,7 +19,7 @@
                 background-image: linear-gradient(to bottom, #003eea,#006dba, #008FF4);
                 display: flex;
             }
-            @media screen and (min-width: 500px) {
+            @media screen and (min-width: 600px) and (max-width: 1100px) {
                 #titulo > h1{
                     margin: auto;
                 }
@@ -35,10 +35,13 @@
                     margin: auto;
                 }
                 div.menu{
-                    width: 100px;
+                    width: 400px;
                 }
             }
-            @media screen and (min-width: 870px) {
+            @media screen and (min-width: 1100px) {
+                div.menu{
+                    width: 600px;
+                }
                 #titulo{
                     display: grid;
                     place-items: center; /* Centraliza na vertical e horizontal */
